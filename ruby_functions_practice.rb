@@ -56,6 +56,8 @@ def number_to_full_month_name(num)
         "November"
     when 12
         "December" 
+    else
+        "Fail"
     end
     return result 
 end
@@ -65,5 +67,11 @@ def number_to_short_month_name(num)
 end
 
 def volume_of_cube(num)
-return num ** 3
+    return num ** 3
 end
+
+def volume_of_sphere(num)
+    result = Math::PI * 4 / 3 * num ** 3
+    return result.round(2)
+end
+
